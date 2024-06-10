@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta charset="UTF-8">
+     <meta name="description" content="Free Web tutorials">
+     <meta name="author" content="John Doe">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nurron</title>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+
+  <!-- jq css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <!-- icon cdn -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- slick css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- slick css theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style >
+  /*body::before
+  {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(https://rainbowit.net/html/nuron/assets/images/bg/noise.gif);
+        z-index: -1;
+        background-color: rebeccapurple;
+        opacity: 0.05;
+
+  }*/
+ 
+   body
+       {
+         background:#e2e8ed;
+       }
+  
+/*desktop*/
+
+@media (min-width: 1200px)
+  {
+      .container 
+          {
+              max-width: 1440px;
+             padding-right: 34px;
+             padding-left: 34px;
+          }
+       }
+
+   .header-flex 
+         {
+               display: flex;
+               justify-content: space-between;
+         }
+
+   .out-nav 
+         {
+              display: flex;
+          }
+   .navbar-brand img  
+         {
+               width: 125px;
+               border-right: 1px solid black;
+               padding-right: 24px;
+         }
+
+    a.nav-link
+         {
+            font-weight: 600;
+            padding: 28px 12px;
+            font-size: 16px;
+            color: black
+            margin: 0 8px;
+            color: #7e7e7e !important;
+            font-family: sans-serif;
+
+         }
+
+    input.form-control.mr-sm-2 
+         {
+
+           padding: 7px 69px 7px 12px;
+           border-radius: 10px; 
+           background: transparent;
+           font-size: 15px;
+           box-shadow: none;
+        
+         }
+
+    button.btn.btn-outline-success.my-2.my-sm-0 
+         {
+           background-color: #212e48;
+           color: white;
+           border-radius: 7px;
+           padding: 7px 11px;
+           border: none;
+         }
+
+ i.fa-regular.fa-bell 
+         {
+              margin: auto;
+         }
+  .fa-bell:before
+        {
+            content: "\f0f3";
+            padding: 9px;
+            font-size: 17px;
+            border-radius: 50px;
+            border: 1px solid #766a6a !important;
+            font-weight: 400;
+            color: grey;
+            margin: 12px;
+       }
+  .sun
+       {
+           content: "\f0f3";
+           padding: 8px;
+           font-size: 11px;
+           border-radius: 50px; 
+           border: 1px solid #766a6a !important;
+           font-weight: 400;
+           color: grey;
+            margin: auto;
+
+       }
+  .dark-mode 
+       {
+          background-color: #181c32;
+          color: white;
+       }
+   .bg-light 
+       {
+          background-color: transparent;
+       }
+   nav.navbar.navbar-expand-lg.navbar-light.bg-light 
+       {
+           background-color: transparent !important;
+       }
+
+.serach-icon 
+      {
+          position: absolute;
+          right: 273px;
+          color: grey;
+      }
+.header-color 
+     {
+         background-color: white;
+     }
+.navbar
+    {
+        justify-content: flex-start;
+    }
+   hr
+       {
+            margin: 0;
+       }
+
+
+
+/* 2nd section css*/
+
+button.slick-next.slick-arrow 
+     {
+        display: none !important;
+     }
+button.slick-prev.slick-arrow 
+     {
+         display: none !important;
+     }
+ .row-5
+    {
+        padding-top: 75px;
+    }
+
+ .slick-dots li button:before 
+     {
+         font-size: 18px;
+         color: white;
+     }
+
+.slick-dots li.slick-active button:before 
+     {
+         opacity: .75;
+         color: transparent;
+         border: 2px solid #00a3ff;
+         border-radius: 50%;
+     }
+.slick-dots 
+     {
+         position: absolute;
+         bottom: 26px;
+         left: 403px;
+         width: 23%;
+    }
+ .sldcol img:hover
+     {
+           transform: scale(1.1);
+           transition: 0.5s;
+     } 
+
+.name-po span 
+      {
+            font-size: 15px;
+            color: #00a3ff;
+            margin-top: 20px;
+      }        
+.name-po h5 
+      {
+          color: white;
+          font-size: 30px;
+          font-family: sans-serif;
+          font-weight: 600;
+      }
+.name-po 
+      {
+          position: absolute;
+          bottom: 0px;
+          z-index: 1;
+          padding: 0 0px 40px 44px;
+      }
+
+ .slick-dots
+      {
+          position: absolute;
+          bottom: 19px;
+      }
+
+ .slick-slide img 
+      {
+          display: block;
+          width: 100%;
+      }   
+ 
+  .six
+     {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+.name-six
+     {
+         position: absolute;
+         bottom: 37px;
+         left: 43px;
+     } 
+.name-six h5
+    {
+         font-family: sans-serif;
+         color: white;
+         font-size: 24px;
+         font-weight: 600;
+         margin-bottom: 4px;
+     }
+.name-six span 
+    {
+         color: #00a3ff;
+         font-family: sans-serif;
+         font-size: 15px;
+    }
+.img-w img
+    {
+         width: 100%;
+         border-radius: 6px;
+    }
+.img-w 
+   {
+         background-color: white;
+         border-radius: 6px;
+         margin-bottom: 27px;
+         padding-top: 12px;
+         padding-bottom: 14px;
+         max-width: 48%;
+
+   }
+ img.zoom:hover
+   {
+         transform: scale(1.1); 
+         transition: 0.4s;
+   }
+.img-zoom
+    {
+         overflow: hidden;
+    }
+.part-bk 
+    {
+          background-color:#f4f4f4;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          border-radius: 8px;
+          margin-bottom: 21px;
+    }   
+.slider-1.slick-initialized.slick-slider.slick-dotted
+    {
+          margin-bottom: 0px;
+    } 
+
+ /*end*/
+
+
+/*third section css*/
+
+.bk-heart-2:hover .shadow
+      {
+           transition: 0.70s;
+           transform: rotate(3deg);
+           background-image: linear-gradient(100deg, #fff, #0398ed);
+           margin-top: 9px;
+           margin-left: -17px; 
+      }
+
+.shadow
+      {
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         margin: -7px;
+         border-radius: 10px;
+      }
+
+.bk-heart:hover .shadow
+      {
+          transition: 0.70s;
+          transform: rotate(3deg);
+          background-image: linear-gradient(100deg, #fff, #0398ed);
+         margin-top: 9px;
+          margin-left: -17px;
+      }
+ .img-over
+     {
+           overflow: hidden;
+     }
+.dots-3
+     {
+            margin-right: 8px;
+     }
+.heading-1 h3
+      {
+             font-size: 32px;
+             font-family: sans-serif;
+             font-weight: 600;
+             padding-bottom: 23px;
+             padding-top: 67px;
+      }        
+.live-main:hover .frist-img 
+     {
+            transform: scale(1.1); 
+            transition: 0.4s;
+            overflow: hidden;
+     }   
+
+.live-main
+     {
+             overflow: hidden;
+     }
+.place-bit 
+      {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 19px;
+        padding-left: 10px;
+     } 
+.place-bit img 
+   {
+         width: 13%;
+         border-radius: 50%;
+         margin-right: -39px;
+         border: 1px solid grey;
+   }
+.place-bit p 
+   {
+        padding-left: 19px;
+        margin-bottom: 0px;    
+        font-size: 14px;
+        color: #65676b;
+  }
+
+.live.bid h4:hover
+  {
+       color:#00a3ff;
+       transition: 0.5s;
+  }
+
+.live.bid h4 
+  {
+      font-size: 19px;
+      font-family: sans-serif;
+      color: black;
+      padding-top: 16px;  
+      padding-left: 10px;
+      margin-bottom: 0;
+  }
+.live.bid span 
+  {
+       padding-left: 10px;
+       font-family: sans-serif;
+       font-size: 15px;
+       color: #7a7979;
+  }
+.hart-icon 
+   {
+       display: flex;
+       padding-top: 10px;
+       padding-left: 10px;
+       font-family: sans-serif;
+       font-size: 14px;
+  }
+.hart-like
+  {
+        padding-top: 4px;
+        padding-left: 92px;
+        margin-right: 5px;
+
+  }
+.hart-icon p 
+  {
+      color: #00a3ff;   
+      font-weight: 600;
+  }
+.bk-heart 
+  {
+       background-color: white;
+       padding: 7px 7px 7px 7px;
+       border-radius: 6px;
+  }
+.heart-row
+  {
+       display: flex;
+       justify-content: space-between;
+        margin-bottom: 35px;
+  }
+img.frist-img 
+  {
+       width: 100%;
+       border-radius: 5px;
+  }
+/*end*/
+
+
+/* 4th section Create and sell your NFTs*/
+
+.animation-efect:hover
+     {
+           position: relative;
+           animation: mymove;
+           nimation-timing-function: ease-in-out;
+           animation-duration: 1s;
+     }    
+@keyframes mymove 
+    {
+            to {bottom: 10px;}
+           from {bottom: 0px;}
+         
+    }
+  .heading-2 h3
+      {
+          font-size: 32px;
+          font-family: sans-serif;
+          font-weight: 600;
+           padding-bottom: 57px;
+          padding-top: 67px;
+
+      } 
+.content 
+    {
+          background-color: white;
+          padding: 31px 26px 17px 31px;
+          border-radius: 10px;
+    }
+
+.content p
+   {
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #8b8b8b;
+          padding-bottom: 25px;
+   }
+.content h4
+    {
+           font-weight: 500;
+           font-size: 24px;
+           line-height: 32px;
+           padding-bottom: 17px;
+           color: black;
+   }
+.content span 
+   {
+           font-size: 15px;
+           line-height: 28px;
+           color: #625959;
+           font-weight: 400;
+   }
+
+i.card-icon
+   {
+           padding-top: 36px;
+           padding-bottom: 24px;
+   }
+.card-top img 
+      {
+           width: 21%;
+           position: absolute;
+           bottom: 284px;
+           right: 0px;
+    }
+
+.content:hover h4 , .content:hover i.card-icon
+  {
+         color: #00a3ff;
+         transition: 0.5s;
+  }
+
+
+/*topo seller css*/
+
+.top-seller-main 
+      {
+           padding-bottom: 68px;
+      }
+
+.brod::before
+      {
+           content: counter(rn-list-counter);
+           padding-top: 22px;
+           font-weight: 700;
+           font-size: 54px;
+           margin-right: -2.5rem;
+           line-height: 1;
+           position: absolute;
+           right: 79px;
+           z-index: 3;
+            opacity: 0.1;
+           top: 50%;
+           transform: translateY(-50%);
+           transition: 0.4s;
+     }
+.brod 
+     {
+           display: flex;
+           counter-increment: rn-list-counter;
+           position: relative;
+           width: 50%;
+           padding-top: 28px;
+           margin-right: 0px;
+
+      }
+
+.top-div img
+      {
+          max-width: 50px;
+          border-radius: 50%;
+          border: 2px solid grey;
+          margin-right: 11px;
+      } 
+
+.brod:hover .top-div img
+      {
+           transform: scale(1.1); 
+            overflow: hidden;
+           transition: 0.3s;
+           border-radius: 100%;
+      }
+  
+  .brod:hover::before      
+      {
+           transform: scale(0.5); 
+           overflow: hidden;
+      }
+
+.top-seller h6 
+      {
+          font-size: 17px;
+          font-family: sans-serif;
+          font-weight: 500;
+          color:#83838;
+          margin-bottom: 0px;
+          padding-top: 6px; 
+      }
+ .top-seller h6:hover
+      {
+           color:#00a3ff ;
+           transition: 0.2s;
+      }
+
+.top-seller  span 
+      {
+          font-size: 14px;
+          font-family: sans-serif; 
+      }
+ .row-4
+      {
+         justify-content: space-between;
+         padding-bottom: 35px;
+      }
+ .days
+      {
+         display: flex;
+         padding-bottom: 26px;
+         padding-top: 50px;
+      }
+ 
+  .days h3  
+      {
+          font-size: 32px;
+          font-family: sans-serif;
+          font-weight: 600;
+          margin-bottom: 0;
+
+       }
+ .days select 
+      {
+          font-size: 32px;
+          font-family: sans-serif;
+          font-weight: 600;
+          margin-left: 16px;
+          color: #00a3ff;
+          border: none;
+          background-color: transparent;
+      }
+
+ .days option 
+      {
+         font-size: 20px;
+         background-color: #fffbfb;
+         color: #65676b;
+      }
+
+
+
+
+/*<top collection css>*/
+span.items:hover 
+   {
+         background-color:#00a3ff;
+         transition: 0.5s;
+   }
+ span.items 
+    {
+        background-color: #f5f8fa;
+        padding: 5px 12px 5px 12px;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+.three-img img
+    {
+        width: 32%;
+        border-radius: 5px;
+    }
+
+ .img-1:hover
+      {
+        transform: scale(1.1); 
+         transition: 0.3s;
+      }
+.img-1
+    {
+        width: 100%;
+        border-radius: 5px;
+    }
+.over 
+    {
+        overflow: hidden;
+    }
+             
+
+.three-img
+    {
+        padding-top: 9px;
+    }
+
+.first-img img 
+     {
+            max-width: 77px;
+            border-radius: 50% !important;
+            border: 5px solid #212e48;
+            position: absolute;
+            top: 182px;
+            left: 127px;
+      }
+ .name
+      {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+      } 
+ h6.title-2 
+      {
+            font-size: 22px;
+            font-weight: 400;
+      }   
+
+h6.title-2:hover
+     {
+            color: #00a3ff;
+            transition: 0.5s;
+     }
+.bk-shadow 
+      {
+            background-color: white;
+            padding-top: 17px;
+            border-radius: 9px;
+      }
+ .row-3 
+      {
+            justify-content: space-between;
+            padding-bottom: 95px;
+      }
+                                              
+ .heading h3 
+      {
+            font-size: 32px;
+             font-family: sans-serif;
+             font-weight: 600;
+             padding-bottom: 47px;
+             padding-top: 0px;
+
+      }
+ .heading button 
+      {
+            border: none;
+            background: transparent;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #424242;
+            height: 42px;      
+      }
+a.tag-a 
+      {
+           color: #424242;
+      }
+a.tag-a:hover 
+      {
+          color: #00a3ff;
+          text-decoration: none;
+      }
+.heading button:hover 
+     {
+          color: #00a3ff;
+     }
+
+.heading
+      {
+  
+           display: flex;
+           justify-content: space-between;
+      }
+
+/*sec-5 Explore Product css*/
+.bk-heart-2:hover .img-over p 
+      {
+            position: absolute;
+            top: 108px;
+            left: 77px;
+            background-color: #00a3ff;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 5px 10px 5px 10px;
+            border-radius: 3px;
+            color: white;
+            font-weight: 600;
+            transition: 0.2s;
+            display: block;
+      }
+  .img-over p 
+     {
+           display: none;
+     }
+ .heading-3 h3
+      {
+             font-size: 32px;
+             font-family: sans-serif;
+             font-weight: 600;
+      }    
+.heading-3 
+      {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 67px;
+            padding-bottom: 56px;
+      }
+.button-7 button 
+     {
+            border-radius: 24px;
+            padding: 6px 28px 10px 29px;
+            border: 1px solid grey;
+            background-color: transparent;
+            margin-left: 6px;
+            color: #878383;
+     }
+.button-7 button:hover 
+
+    {
+          background: #212e48;
+          border-color: #212e48;
+          color: #00a3ff;
+          transition: 0.7s;
+    }
+
+/*part-2*/
+.bk-heart-2
+   {
+         background-color: white;
+         padding: 8px 8px 6px 7px;
+         border-radius: 5px;
+    }
+
+
+/*end*/
+
+ /*footer css*/
+ .footer 
+      {
+           background-color: white;
+      }
+
+ .row-1
+       {
+          display: flex;
+          justify-content: space-between;
+          gap: 24px;
+          padding-bottom: 73px;
+          padding-top: 75px;   
+       }
+  .sec-1 img 
+       {
+         max-width: 108px;
+       }
+ .sec-1 p
+       {
+          font-size: 18px;
+          margin-top: 20px;
+          padding: 0 30px 0 0;
+          font-family: sans-serif;
+          color: grey;
+
+       }
+  .sec-1 h6
+       {
+         font-weight: 700;
+         font-size: 16px;
+         color: #505050;
+         padding-top: 40px;
+
+       }
+  input[type="text"]
+       {
+         border: 2px solid black;
+         padding: 9px 27px 8px 14px;
+         border-radius: 5px 0px 0px 5px;
+         background-color: #f2f4f7;
+         font-size: 16px;
+         width: 60%;
+       }
+ .btn-1
+       {
+           display: flex;
+           padding-top: 15px;
+
+
+       }
+.btn-1 button:hover
+       {
+         background-color: #00a3ff ; 
+       }
+      
+ .btn-1 button 
+       {
+         background-color: #212e48;
+         color: white;
+         font-size: 16px;
+         border-radius: 0px 5px 5px 0px;
+         border: none;
+         width: 40%;
+
+
+       }
+ p.footer-p 
+       {
+          font-size: 13px;
+       }
+   
+ .sec-2 h2 
+       {
+          font-size: 24px;
+          font-family: sans-serif;
+          font-weight: 600;
+       }
+  p.p2
+      {
+ 
+          line-height: 44px;
+          font-size: 50px;
+          font-size: 17px !important;
+          font-family: sans-serif !important;
+          color: #7e7e7e !important;
+          font-weight: 500;
+          padding-top: 10px;
+
+     }
+  p.p3
+     {
+ 
+           line-height: 38px;
+          font-size: 50px;
+          font-size: 17px !important;
+          font-family: sans-serif !important;
+          color: #7e7e7e !important;
+          font-weight: 500;
+          padding-top: 10px;
+     }
+ .sec-4 img 
+      {
+          border-radius: 50%;
+          max-width: 65px;
+          max-height: 65px;
+          
+      }
+ .sec-4 
+      {
+          display: flex;
+          padding-top: 9px;
+      }
+ h6.title 
+      {
+          margin-bottom: 4px;
+          font-weight: 600;  
+          font-size: 15px;
+          color: black;
+
+      }
+.images-sec p 
+      {
+
+          margin-bottom: 3px;
+          font-size: 14px;
+          color: #7a7373;
+      }
+.images-sec
+      {      
+        padding-left: 13px;
+        padding-bottom: 15px;
+      }
+
+.images-sec span
+      {
+           color: #00ADEF;
+           font-weight: 700;
+     }
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light 
+     {
+          padding-left: 0px;
+          padding-right: 0px;
+     }
+.row-2 
+     {
+         display: flex;
+         justify-content: space-between;
+         padding-top: 28px;
+     }
+.footer-2 span 
+     {
+          color: black;
+     }
+.footer-2 
+     {
+         display: flex;
+         gap: 28px;
+     }
+
+.footer-2 p 
+     {
+         border-right: 1px solid black;
+         padding-right: 28px;
+         color: black;
+     }
+.ab 
+     {
+        border-radius: 50px;
+        padding: 10px;
+        background-color: #e9e8e8;
+        margin-right: 14px;
+     }
+.icon 
+     {
+         text-align: right;
+         padding: 0;
+     }
+
+.sec-2 a
+     {
+         color:#7c7c7c;
+     }
+.sec-2 a:hover
+     {
+         color: #00a3ff;
+     }
+
+.title:hover
+     {
+         color: #00a3ff;
+     }
+.icon svg 
+    {
+        width: 26px;
+        height: 19px;
+    }
+.icon span
+    {
+        background-color: #f5f5f5;
+        padding: 12px 8px 6px 8px;
+        border-radius: 50%;
+        color: black;   
+    }
+.icon span:hover
+    {
+        background-color: #00a3ff;
+        transition: 1s;
+    }
+
+/*end*/
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+ 
+
+/*desktop*/
+@media screen and (min-width: 1024px)
+      {
+  .bk-shadow 
+      {
+        
+         max-width: 23%;
+      }  
+  .img-w 
+      {
+         max-width: 32%;
+      }
+  .brod 
+      {
+        width: 20% !important;
+        max-width: 20% !important;
+        flex: auto !important;
+      }
+ .bk-heart-2 
+     {
+         max-width: 16.666667%;
+         margin-right: 1px;
+         margin-bottom: 35px;
+
+     }
+ }
+
+
+/*tab*/
+@media screen and (min-width: 768px) and (max-width: 1024px)
+
+    {
+.icon 
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 18px;
+    } 
+.footer-2 
+    {
+
+        justify-content: center;
+    }
+.bk-shadow
+    {
+          margin-bottom: 32px;
+          max-width: 48%;
+    }
+  .hart-like
+     {
+        padding-left: 198px;
+
+     }
+  .content 
+     {
+        margin-bottom: 44px;
+     }
+ .card-top img 
+     {
+        width: 16%;
+        top: -18px;
+     }  
+  .bk-heart 
+     {
+         max-width: 48%;
+         margin-bottom: 37px;
+     }
+.place-bit img
+     {
+         width: 9%;
+         margin-right: -160px;
+     }
+.heading-2 h3 
+    {
+        padding-bottom: 56px;
+        padding-top: 60px;
+    }
+.bk-heart-2
+     {
+        max-width: 48%;
+        margin-bottom: 27px;
+     }
+ .six 
+    {
+       padding-left: 0;
+       padding-right: 0;
+    }
+.heading-3 
+    {    
+       padding-top: 0;
+    }
+ .button-7 button 
+    {
+       margin-bottom: 9px;
+     }
+.heading-3
+    {
+       display: block;
+    }
+.button-7 
+    {
+       padding-top: 21px;
+    }
+.serach-icon 
+    {
+       position: absolute;
+       right: 324px;
+       top: 9px;
+       border: 1px solid grey;
+       border-radius: 50%;
+       padding: 9px;
+     }
+input.form-control.mr-sm-2 
+     {
+        display: none;
+     }
+.form-inline 
+     {
+      display: flex;
+      align-content: flex-start;
+     }
+ i.fa-regular.fa-bell 
+     {
+         margin: 0px !important;
+         margin-top: 20px !important;
+     }
+.sun 
+    {
+        margin: 0px !important;
+        height: 61%;
+        margin-top: 11px !important;
+    }
+  }
+
+
+  /*phone*/
+
+  @media screen and (max-width: 768px)  and (min-width: 320px)
+        {
+  .brod::before 
+        {
+
+           font-size: 41px !important;
+           padding-top: 36px ;
+
+       }
+  .first-img img 
+       {
+    
+          top: 324px;
+          left: 224px;
+      }
+ .bk-shadow 
+      {
+          margin-bottom: 26px;
+      } 
+
+.content
+      {
+          margin-bottom: 62px;
+      }
+ .card-top img 
+      {
+         bottom: 314px; 
+      }
+.card-top img 
+    {
+        width: 14%;
+        bottom: 315px;
+    }
+.bk-heart 
+    {
+        max-width: 48%;
+        margin-bottom: 44px;
+    }
+.place-bit img 
+   {
+            margin-right: -71px;
+   }
+.slick-dots 
+    {
+        bottom: 28px;
+        left: 365px;
+    }
+.heading-3 
+    {
+        display: block;
+        padding-top: 0;
+    }
+.button-7 button 
+    {
+        margin-bottom: 9px;
+    }
+ .bk-heart-2 
+    {
+         max-width: 47%;
+        margin-bottom: 30px;
+    }
+.icon 
+    {
+       text-align: center;
+       padding-bottom: 24px;
+       padding-top: 12px;
+    }
+ .footer-2 
+    {
+        display: block !important;
+        text-align: center;
+        padding-bottom: 17px;
+        line-height: 15px;
+    }
+.footer-2 p 
+   {
+        border-right: none;
+   }
+
+button.btn.btn-outline-success.my-2.my-sm-0 
+    {
+        display: none;
+    }
+.heading-2 h3 
+     {
+        padding-top: 0px;
+     }
+ input.form-control.mr-sm-2 
+      {
+        display: none;
+      }
+.serach-icon
+     {
+         position: absolute;
+         right: 193px;
+         top: 12px;
+         border: 1px solid grey;
+         border-radius: 50%;
+         padding: 10px;
+
+     }
+i.fa-regular.fa-bell 
+    {
+        margin: 0px; 
+        margin-top: 23px;
+    }
+.sun 
+    {
+       margin: 0px !important;
+       height: 7%;
+       margin-top: 10px !important;
+    }
+ }
+
+
+@media screen and (max-width: 426px)  and (min-width: 320px)
+
+{
+ .first-img img 
+
+   { 
+     top: 246px;
+     left: 173px;
+
+   }
+.img-w
+   {
+     max-width: 100%;
+   }
+.heart-row 
+   {
+    
+      padding: 19px;
+   }
+.bk-heart
+    {
+    max-width: 100%;
+    }
+.place-bit img
+   {
+     width: 10%;
+     border-radius: 50%;
+     margin-right: -184px;
+  }
+.slick-dots
+   {
+      left: 213px; 
+      width: 31%;
+   }
+.bk-heart-2 
+   {
+       margin-bottom: 36px;
+       max-width: 100%;
+   }
+.card-top img 
+   {
+       width: 16%;
+       bottom: 338px;
+   }
+.serach-icon 
+    {
+       position: absolute;
+       right: 108px;
+    }
+ }
+/*end*/
+
+/*1200 to 1399*/
+@media screen and (min-width: 1200px)  and (max-width: 1399px)
+{
+.first-img img 
+     {
+       top: 156px;
+       left: 107px;
+     }
+.content h4
+     {
+        font-size: 21px;
+     }
+.card-top img 
+     {
+         width: 25%;
+         position: absolute;
+         bottom: 314px;
+     }
+.hart-like 
+     {
+         padding-left: 63px;
+     }
+   }
+
+/*end*/
+
+/*1024 to 1199*/
+@media screen and (min-width: 1024px)  and (max-width: 1199px)
+  {
+  .bk-shadow 
+    {
+       max-width: 32%;
+       margin-bottom: 28px;
+    }
+  .content 
+    {
+    margin-bottom: 44px;
+    }
+ .card-top img 
+   {
+      width: 16%;
+       top: -25px;
+   }
+ .bk-heart 
+    {
+       max-width: 32%;
+    }
+ .heart-row 
+    {
+       display: flex;
+       justify-content: normal;
+       gap: 19px;
+
+    }
+    
+.place-bit img 
+    {
+       width: 12%;
+       margin-right: -117px;
+    }
+.hart-like 
+    {
+       padding-top: 4px;
+       padding-left: 165px;
+    }
+  .slick-dots 
+    {
+       bottom: 40px;
+       left: 687px;
+    }
+.bk-heart-2 
+    {
+        max-width: 31.666667%;
+    }
+.hart-like 
+    {
+        padding-left: 151px;
+    }
+.button-7 button 
+    {
+        margin-top: 8px;
+    }
+.first-img img 
+    {
+       top: 167px;
+      left: 115px;
+    }
+.six 
+    {
+       padding-left: 0;
+       padding-right: 0;
+    }
+.row-3 
+    {
+      justify-content: space-between;
+      padding-bottom: 0px;
+   }
+.heading-3
+   {
+    padding-top: 62px;
+   }
+
+ input.form-control.mr-sm-2 
+    {
+      width: 50%;
+   }
+.serach-icon 
+   {
+     position: absolute;
+     right: 373px;
+  }
+} 
+
+    /*end*/
+
+</style>
+<body>
+
+  <!-- section 1 -->
+<div class="header-color">
+ <div class="container">
+  <div class="header-flex">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#"><img id="myImage" src="https://rainbowit.net/html/nuron/assets/images/logo/logo-dark.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"     aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item active">
+                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+     
+              <li class="nav-item">
+               <a class="nav-link disabled" href="#">Explore</a>
+              </li>
+
+               <li class="nav-item">
+                <a class="nav-link disabled" href="#">Pages</a>
+              </li>
+
+              <li class="nav-item">
+               <a class="nav-link disabled" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
+              </li>
+        </ul>
+    </div>
+  </nav>
+
+      <div class="out-nav">
+         <form class="form-inline my-2 my-lg-0 ">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search Here " aria-label="Search">    
+               <i class="fa-solid fa-magnifying-glass serach-icon"></i>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Wallet connect </button> 
+           </form>
+
+            <i class="fa-regular fa-bell "></i>
+
+             <div onclick="myFunction()"class="sun ">
+              <img id="sun-mood" src="https://rainbowit.net/html/nuron/assets/images/icons/vector.svg">
+             </div>
+      </div>
+   </div>
+ </div>
+</div>
+ 
+
+
+
+ <!--Header-->
+<!-- 
+  <div class="sec1">
+    <div class="container">
+
+      <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding-bottom: 25px; padding-top: 25px; padding-left: 0px; padding-right: 0px;">
+          <a class="navbar-brand" href="#"><img src="https://rainbowit.net/html/nuron/assets/images/logo/logo-dark.png"
+              alt="nft-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Home
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Home page - 01</a>
+                  <a class="dropdown-item" href="#">Home page - 02</a>
+                  <a class="dropdown-item" href="#">Home page - 03</a>
+                  <a class="dropdown-item" href="#">Home page - 04</a>
+                  <a class="dropdown-item" href="#">Home page - 05</a>
+                  <a class="dropdown-item" href="#">Home page - 06</a>
+                  <a class="dropdown-item" href="#">Home page - 07</a>
+                  <a class="dropdown-item" href="#">Home page - 08</a>
+                  <a class="dropdown-item" href="#">Home page - 09</a>
+                  <a class="dropdown-item" href="#">Home page - 10</a>
+                  <a class="dropdown-item" href="#">Home page - 11</a>
+                  <a class="dropdown-item" href="#">Home page - 12</a>
+                  <a class="dropdown-item" href="#">Home page - 13</a>
+                  <a class="dropdown-item" href="#">Home page - 14</a>
+                  <a class="dropdown-item" href="#">Home page - 15</a>
+                  <a class="dropdown-item" href="#">Home page - 16</a>
+                  <a class="dropdown-item" href="#">Home page - 17</a>
+                  <a class="dropdown-item" href="#">Home page - 18</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Explore
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Explore Filter</a>
+                  <a class="dropdown-item" href="#">Explore Isotop</a>
+                  <a class="dropdown-item" href="#">Explore Carousel</a>
+                  <a class="dropdown-item" href="#">Explore Simple</a>
+                  <a class="dropdown-item" href="#">Explore Place Bid</a>
+                  <a class="dropdown-item" href="#">Place Bid With Filter</a>
+                  <a class="dropdown-item" href="#">Place Bid With Isotop</a>
+                  <a class="dropdown-item" href="#">Place Bid With Carousel</a>
+                  <a class="dropdown-item" href="#">Explore Style List</a>
+                  <a class="dropdown-item" href="#">Explore List Col-Town </a>
+                  <a class="dropdown-item" href="#">Explore Left Filter</a>
+                  <a class="dropdown-item" href="#">Live Explore</a>
+                  <a class="dropdown-item" href="#">Live Explore Carousel</a>
+                  <a class="dropdown-item" href="#">Live With Place Bid</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Blog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Blog Single Column</a>
+                  <a class="dropdown-item" href="#">Blog Two Column</a>
+                  <a class="dropdown-item" href="#">Blog Three Column</a>
+                  <a class="dropdown-item" href="#">Blog Four Column</a>
+                  <a class="dropdown-item" href="#">Blog Details</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contact</a>
+              </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                style="padding-right: 46px;">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                style="background: #212e48; color: white; font-size: 14px; padding: 7px; border: darkblue;">Wallet
+                Connect</button>
+            </form>
+
+            <div>
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div>
+              <a id="theme-switcher" class="btn">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â¼</a>
+            </div>
+
+          </div>
+        </nav>
+      </header>
+    </div>
+  </div> -->
+<hr>
+
+<!-- section-2 -->
+
+<div class="container ">
+  <div class="row row-5">
+    <div class="part-bk col-xl-5">
+      <div class="slider-1">
+
+        <div class="sldcol">
+          <img src="https://rainbowit.net/html/nuron/assets/images/banner/h-three-banner-01.jpg">
+          <div class="name-po">
+            <h5>HasLivbe</h5>
+            <span>Md. Master</span>
+          </div>
+        </div>
+
+        <div class="sldcol">
+          <img src="https://rainbowit.net/html/nuron/assets/images/banner/h-three-banner-02.jpg">
+          <div class="name-po">
+            <h5>Ladicon Mos</h5>
+            <span>John Lee</span>
+          </div>
+        </div>
+
+        <div class="sldcol">
+          <img src="https://rainbowit.net/html/nuron/assets/images/banner/h-three-banner-03.jpg">
+          <div class="name-po">
+            <h5>Masters</h5>
+            <span>Keenlee</span>
+          </div>
+        </div>
+      </div>
+   </div>
+
+<!-- pardt 2 -->
+
+  <div class="six col-xl-7 "> 
+      <div class="col-xl-4 col-md-6 img-w">
+        <div class="img-zoom">
+         <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-01.jpg">
+       </div>
+         <div class="name-six">
+            <h5>HasLivbe</h5>
+            <span>Md. Master</span>
+          </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 img-w">
+         <div class="img-zoom">
+           <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-02.jpg">
+         </div>
+         <div class="name-six">
+            <h5>Ladicon Mos</h5>
+            <span>Md. Master</span>
+          </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 img-w">
+         <div class="img-zoom">
+           <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-03.jpg">
+         </div>
+         <div class="name-six">
+            <h5>Twinkle</h5>
+            <span>Latis Hook</span>
+          </div>
+     </div>
+
+     <div class="col-xl-4 col-md-6 img-w">
+       <div class="img-zoom">
+         <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-04.jpg">
+       </div>
+         <div class="name-six">
+            <h5>Monster</h5>
+            <span>Decruse</span>
+          </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 img-w">
+         <div class="img-zoom">
+           <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-05.jpg">
+         </div>
+         <div class="name-six">
+            <h5>Labibas Had</h5>
+            <span>Kenlee</span>
+          </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6 img-w">
+         <div class="img-zoom">
+           <img class="zoom" src="https://rainbowit.net/html/nuron/assets/images/banner/banner-sm-06.jpg">
+         </div>
+         <div class="name-six">
+            <h5>OperaHub</h5>
+            <span>Lathis Hook</span>
+          </div>
+     </div>
+  </div>
+
+  </div>
+</div>
+
+
+
+<!-- third section -->
+
+<div class="container ">
+
+    <div class="heading-1">
+        <h3>Live Bidding</h3>
+    </div>
+
+    <div class="row heart-row">
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart">
+          <div class="shadow"> </div>
+            <div class="live-main">
+              <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-01.jpg">
+             </div>
+
+             <div class="place-bit">
+                <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+                <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+                <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+                <p>9+ Place Bit.</p>
+
+                <div class="thiree-dots">
+                <i class="fa-solid fa-ellipsis dots-3"></i>
+                </div>
+             </div>
+
+             <div class="live bid">
+            <h4>Preatent</h4>
+            <span>Highest bid 1/20</span>
+            </div>
+
+            <div class="hart-icon">
+              <p>0.244wETH</p>
+              <div class="like-h">
+              <i class="fa-regular fa-heart hart-like like-h"></i><span class="like-h">322</span>
+            </div>
+            </div>
+
+        </div>   
+       </div>
+ 
+ <!-- part-2 -->
+      <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-02.jpg">
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>4+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>#21 The Wonder</h4>
+          <span>Highest bid 1/20</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>322</span>
+          </div>
+
+        </div> 
+          
+       </div>
+
+<!-- part-3 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart">
+          <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-03.jpg">
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>5+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>OrBid6</h4>
+          <span>Highest bid 2/31</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>12</span>
+          </div>
+
+        </div> 
+         
+       </div>
+<!-- part-4 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart">
+          <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-04.jpg">
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>11+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Morgan11</h4>
+          <span>Highest bid 3/16</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>20</span>
+          </div>
+
+        </div> 
+          
+       </div>
+<!-- part-5 -->
+       <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-05.jpg">
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>10+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>mAtal8</h4>
+          <span>Highest bid 6/50</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>205</span>
+          </div>
+
+        </div> 
+          
+       </div>
+
+   </div>
+</div>
+
+
+<!-- <end. -->
+
+
+<!-- sec-4 Create and sell your NFTs -->
+<div class="container ">
+
+    <div class="heading-2">
+        <h3>Create and sell your NFTs</h3>
+    </div>
+
+    <div class="row row-3">
+       <div class="col-xl-3 col-xxl-3 col-md-6 col-sm-12 cards">
+          <div class="content">
+            <div class="animation-efect">
+             <p>Step-01</p>
+             <h4>Set up your wallet</h4>
+             <span>Powerful features and inclusions, which makes Nuron standout,easily customizable and scalable.</span>
+              <br>
+             <i class="fa-sharp fa-solid fa-arrow-right card-icon"></i>
+             <div class="card-top">
+              <img src="https://rainbowit.net/html/nuron/assets/images/icons/shape-7.png">
+             </div>
+          </div>
+        </div>
+       </div>
+
+      <div class="col-xl-3 col-xxl-3 col-md-6 col-sm-12 cards">
+          <div class="content">
+             <div class="animation-efect">
+             <p>Step-02</p>
+             <h4>Create your collection</h4>
+             <span>A great collection of beautiful website templates for your need.Choose the best suitable template.</span>
+              <br>
+             <i class="fa-sharp fa-solid fa-arrow-right card-icon"></i>
+             <div class="card-top">
+              <img src="https://rainbowit.net/html/nuron/assets/images/icons/shape-1.png">
+             </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-xl-3 col-xxl-3 col-md-6 col-sm-12 cards">
+          <div class="content">
+             <div class="animation-efect">
+             <p>Step-03</p>
+             <h4>Add your NFT's</h4>
+             <span>We've made the template fully responsive, so it looks great on all devices: desktop, tablets and.</span>
+              <br>
+             <i class="fa-sharp fa-solid fa-arrow-right card-icon"></i>
+             <div class="card-top">
+              <img src="https://rainbowit.net/html/nuron/assets/images/icons/shape-5.png">
+             </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-xl-3 col-xxl-3 col-md-6 col-sm-12 cards">
+          <div class="content">
+             <div class="animation-efect">
+             <p>Step-04</p>
+             <h4>Sell Your NFT's</h4>
+             <span>I throw myself down among the tall grass by the stream as I lie close to the earth NFT's.</span>
+              <br>
+             <i class="fa-sharp fa-solid fa-arrow-right card-icon"></i>
+             <div class="card-top">
+              <img src="https://rainbowit.net/html/nuron/assets/images/icons/shape-6.png">
+             </div>
+          </div>
+        </div>
+       </div>
+   </div>
+</div>
+<!-- end -->
+
+<!-- sec-5 Explore Product -->
+<div class="container ">
+
+    <div class="heading-3">
+        <h3>Explore Product</h3>
+      <div class="button-7">
+        <button type="submit">All</button>
+        <button type="submit">Art</button>
+        <button type="submit">Music</button>
+        <button type="submit">Vedio</button>
+        <button type="submit">Collectionable</button>
+        <button type="submit">Highest</button>
+        <button type="submit">Lowest</button>
+      </div>
+    </div>
+
+    <div class="row heart-row">
+       <div class="col-xl-2 col-log-3 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-01.jpg">
+               <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>20+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Preatent</h4>
+          <span>Highest bid 1/20</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>322</span>
+          </div>
+
+        </div>     
+       </div>
+ 
+ <!-- part-2 -->
+      <div class="col-xl-2 col-xxl-3 col-log-3  col-md-6 col-sm-12 bk-heart-2 ">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-02.jpg">
+               <p>Place Bid</p>
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-5.png">
+              <p>23+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>#21 The Wonder</h4>
+          <span>Highest bid 1/20</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>420</span>
+          </div>
+
+        </div> 
+          
+       </div>
+
+<!-- part-3 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2 ">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-03.jpg">
+               <p>Place Bid</p>
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-5.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-8.png">
+              <p>15+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>OrBid6</h4>
+          <span>Highest bid 2/31</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>12</span>
+          </div>
+
+        </div> 
+         
+       </div>
+<!-- part-4 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-04.jpg">
+                <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-8.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>19+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Morgan11</h4>
+          <span>Highest bid 3/16</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>20</span>
+          </div>
+
+        </div> 
+          
+       </div>
+<!-- part-5 -->
+       <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2 ">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+              <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-05.jpg">
+               <p>Place Bid</p>
+            </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-11.png">
+              <p>19+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>mAtal8</h4>
+          <span>Highest bid 6/50</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>205</span>
+          </div>
+
+        </div> 
+          
+       </div>
+
+<!-- part-6 -->
+      <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-06.jpg">
+                <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-10.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-8.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>11+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Platonum</h4>
+          <span>Highest bid 1/10</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>322</span>
+          </div>
+
+        </div>     
+       </div>
+ 
+ <!-- part-7 -->
+      <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+        <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-07.jpg">
+                <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-6.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-8.png">
+              <p>35+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>PlatOrgan</h4>
+          <span>Highest bid 2/20</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>322</span>
+          </div>
+        </div> 
+     </div>          
+  
+<!-- part-8 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12  bk-heart-2">
+           <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-08.jpg">
+                <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-10.png">
+              <p>7+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Orgajis</h4>
+          <span>Highest bid 2/10</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>12</span>
+          </div>
+
+        </div> 
+         
+       </div>
+<!-- part-9 -->
+        <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+           <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+               <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-01.jpg">
+                <p>Place Bid</p>
+             </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-6.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+              <p>5+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Preatent</h4>
+          <span>Highest bid 1/20</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>20</span>
+          </div>
+
+        </div> 
+          
+       </div>
+<!-- part-10 -->
+       <div class="col-xl-2 col-xxl-3 col-md-6 col-sm-12 bk-heart-2">
+         <div class="shadow"> </div>
+          <div class="live-main">
+             <div class="img-over">
+                <img class="frist-img" src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-02.jpg">
+                 <p>Place Bid</p>
+              </div>
+
+           <div class="place-bit">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-1.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+              <img src="https://rainbowit.net/html/nuron/assets/images/client/client-10.png">
+              <p>20+ Place Bit.</p>
+
+              <div class="thiree-dots">
+              <i class="fa-solid fa-ellipsis dots-3 "></i>
+              </div>
+           </div>
+
+           <div class="live bid">
+          <h4>Diamond Do</h4>
+          <span>Highest bid 5/11</span>
+          </div>
+
+          <div class="hart-icon">
+            <p>0.244wETH</p>
+            <i class="fa-regular fa-heart hart-like"></i><span>205</span>
+          </div>
+
+        </div> 
+          
+       </div>
+    </div>
+   </div>
+</div>
+<!-- end -->
+
+<!-- sec-6 top seller -->
+
+<div class="container ">
+  <div class="top-seller-main">
+   <div class="days">
+   <h3>Top Seller in</h3>
+      <select>
+        <option>1 day</option>
+        <option>7 day's</option>
+        <option>15 day's</option>
+        <option>30 day's</option>
+
+      </select>   
+   </div>
+
+  <div class="row row-4">
+    <!-- top 1 to 5 -->
+    <div class="brod col-xl-3 col-md-4 col-sm-6">
+       <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-12.png">
+       </div>
+     
+        <div class="top-seller">
+           <h6 >Brodband</h6>
+           <span> $2500,000</span>
+       </div>
+
+    </div>
+
+
+    <div class="brod col-xl-3 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-2.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Ms. Parkline</h6>
+           <span> $2300,000</span>
+        </div>
+    </div>
+
+    <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-3.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Methods</h6>
+           <span> $2100,000</span>
+        </div>
+    </div>
+ 
+    <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-4.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Jone sone</h6>
+           <span>$2000,000</span>
+        </div>
+    </div>
+
+     <div class="brod col-xl-2 col-md-4 col-sm-6 ">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-5.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Siddhart</h6>
+           <span>$200,000</span>
+        </div>
+    </div>
+
+
+<!-- botttom 1 t0 5 -->
+
+    <div class="brod col-xl-2 col-md-4 col-sm-6 ">
+       <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-6.png">
+       </div>
+     
+        <div class="top-seller">
+           <h6 >Sobuj Mk</h6>
+           <span> $2000,000</span>
+       </div>
+
+    </div>
+
+
+    <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-7.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Trodband</h6>
+           <span> $2500,000</span>
+        </div>
+    </div>
+
+    <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-8.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Yash</h6>
+           <span> $2500,000</span>
+        </div>
+    </div>
+ 
+    <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-9.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >YASHKIB</h6>
+           <span>$2500,000</span>
+        </div>
+    </div>
+
+     <div class="brod col-xl-2 col-md-4 col-sm-6">
+        <div class="top-div">
+           <img src="https://rainbowit.net/html/nuron/assets/images/client/client-10.png">
+        </div>
+     
+       <div class="top-seller">
+           <h6 >Brodband</h6>
+           <span>$2500,000</span>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<!-- 1 to 5 -->
+
+
+<!-- sec-7 <top collection> -->
+
+
+<div class="container ">
+
+  <div class="heading">
+      <h3>Top Collection</h3>
+      <button type="submit"><a class="tag-a" href="https://rainbowit.net/html/nuron/index-three.html">VIEW ALL</a> <i class="fa-sharp fa-solid fa-arrow-right view-right"></i></button>
+    </div>
+
+  <div class="row row-3 ">
+    <div class="col-xxl-3 col-md-6 col-sm-12 bk-shadow ">
+      <div class="over">
+      <img class="img-1" src="https://rainbowit.net/html/nuron/assets/images/collection/collection-lg-01.jpg">
+    </div>
+
+         <div class="three-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-01.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-02.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-03.jpg">
+        </div>
+
+        <div class="first-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/client/client-15.png">
+        </div>
+
+       <div class="name">
+           <h6 class="title-2">Cubic Trad</h6>
+           <span class="items">27 Items</span>
+      </div>
+  </div>
+
+    
+
+    <div class="col-xxl-3  col-md-6 col-sm-12  bk-shadow ">
+      <div class="over">
+         <img class="img-1" src="https://rainbowit.net/html/nuron/assets/images/collection/collection-lg-03.jpg">
+       </div>
+
+         <div class="three-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-04.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-05.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-06.jpg">
+        </div>
+
+        <div class="first-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/client/client-12.png">
+        </div>
+
+       <div class="name">
+           <h6 class="title-2">Diamond Dog</h6>
+           <span class="items">20 Items</span>
+      </div>
+  </div>
+
+
+  <div class="col-xxl-3  col-md-6 col-sm-12  bk-shadow ">
+     <div class="over">
+        <img class="img-1" src="https://rainbowit.net/html/nuron/assets/images/collection/collection-lg-02.jpg">
+      </div>
+
+         <div class="three-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-04.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-08.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-09.jpg">
+        </div>
+
+        <div class="first-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/client/client-13.png">
+        </div>
+
+       <div class="name">
+           <h6 class="title-2">Morgan11</h6>
+           <span class="items">15 Items</span>
+      </div>
+  </div>
+
+
+   <div class="col-xxl-3  col-md-6 col-sm-12  bk-shadow ">
+    <div class="over">
+      <img class="img-1" src="https://rainbowit.net/html/nuron/assets/images/collection/collection-lg-04.jpg">
+    </div>
+
+         <div class="three-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-10.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-11.jpg">
+            <img src="https://rainbowit.net/html/nuron/assets/images/collection/collection-sm-12.jpg">
+        </div>
+
+        <div class="first-img">
+            <img src="https://rainbowit.net/html/nuron/assets/images/client/client-14.png">
+        </div>
+
+       <div class="name">
+           <h6 class="title-2">Orthogon#720</h6>
+           <span class="items">10 Items</span>
+      </div>
+  </div>
+
+  </div>
+  </div>
+
+
+
+
+
+<!-- footer-->
+<div class="footer">
+ <div class="container">
+   <div class="row row-1">
+
+    <!-- part-1 -->
+      <div class=" sec-1 col-lg-3 col-md-5 col-sm-12">
+       <img src="https://rainbowit.net/html/nuron/assets/images/logo/logo-dark.png"><br>
+       <p>Created with the collaboration of over 60 of the world's best Nuron Artists.</p><br>
+         <hr>
+       <h6>Get The Latest Nuron Updates</h6>
+
+     <div class="btn-1">
+       <input type="text" name="" placeholder="Your username">
+       <button type="submit">Subscribe</button>
+     </div>
+
+       <p class="footer-p" >Email is safe. We don't spam.</p>
+
+    </div>
+   <!--  <part-2> --> 
+
+    <div class="  sec-2 col-lg-2 col-md-5">
+      <h2>Nuron</h2>
+      <p class="p2"><a href="#">Protocol Explore</a><br>
+                    <a href="#"> System Token</a><br>
+                    <a href="#"> Otimize Time</a> <br>
+                    <a href="#">Visual Checking</a><br>
+                    <a href="#"> Activity Log</a> <br>
+                    <a href="#">System Auto Since</a></p>
+
+   
+    </div>
+  <!-- part-3 -->
+    <div class=" sec-2 col-lg-2 col-md-5">
+        <h2>Information</h2>
+        <p class="p3"><a href="#"> Market Explore</a><br>
+                      <a href="#"> Ready Token</a><br>
+                      <a href="#"> Main Option</a><br>
+                      <a href="#"> Product Checking</a><br>
+                      <a href="#"> Blog Grid</a><br>
+                      <a href="#"> About Us</a> <br>
+                      <a href="#"> Fix Bug</a></p>   
+    </div>
+  <!-- part-4 -->
+    <div class=" sec-2 col-lg-3 col-md-5">
+
+        <h2>Recent Sold Out</h2>
+
+        <div class="sec-4">
+          <img src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-01.jpg">
+
+          <div class="images-sec">   
+            <h6 class="title">#21 The Wonder</h6>
+            <p >Highest bid 1/20</p>
+            <span>0.244wETH</span>
+          </div> 
+       </div>
+
+       <hr>
+
+        <div class="sec-4">
+           <img src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-02.jpg">
+          <div class="images-sec">   
+            <h6 class="title">Diamond Dog</h6>
+            <p >Highest bid 1/20</p>
+            <span>0.022wETH</span>
+          </div> 
+       </div>
+       <hr> 
+
+        <div class="sec-4">
+          <img src="https://rainbowit.net/html/nuron/assets/images/portfolio/portfolio-03.jpg">
+
+          <div class="images-sec">   
+            <h6 class="title">Morgan11</h6>
+            <p >Highest bid 1/20</p>
+            <span>0.892wETH</span>
+          </div>  
+       </div>
+  </div>
+
+</div>
+<hr>
+</div>
+<!-- footer buttom -->
+
+   <div class="container ">
+  <div class="row row-2">
+    <div class="col-lg-6 col-md-12 col-sm-12  footer-2">
+       <p>2022 Nuron, Inc. All rights reserved.</p>
+        <span>Terms  Privacy Policy</span>
+    </div>
+
+
+    <div class="col-lg-3 col-md-12 col-sm-12 icon">
+      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook "><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span>
+
+       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter "><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></span>
+
+       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram "><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></span>
+
+      <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin "><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span>
+
+
+       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail "><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <bootstrap js> -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!-- slick js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+
+    var image = document.getElementById('myImage');
+        if (image.src.match("https://rainbowit.net/html/nuron/assets/images/logo/logo-white.png")) 
+           {
+              image.src ="https://rainbowit.net/html/nuron/assets/images/logo/logo-dark.png";
+           }
+       else 
+            {
+                image.src = "https://rainbowit.net/html/nuron/assets/images/logo/logo-white.png";
+            }
+
+
+            var image = document.getElementById('sun-mood');
+        if (image.src.match("https://rainbowit.net/html/nuron/assets/images/icons/sun-01.svg")) 
+           {
+              image.src ="https://rainbowit.net/html/nuron/assets/images/icons/vector.svg";
+           }
+       else 
+            {
+                image.src = "https://rainbowit.net/html/nuron/assets/images/icons/sun-01.svg";
+            }
+        }
+        
+
+ 
+
+
+</script>
+
+
+<script>
+$('.slider-1').slick({
+  arrow:false,
+  dots: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+});
+</script>
+
+
+</body>
+</html>
